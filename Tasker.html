@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker</title>
+    <style>
+        body{
+            visibility: visible;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Tasks</h1>
+     <input id="taskInput" placeholder="Enter Task">
+
+    <button id="addBtn">Add Task</button>
+<ul id="tasklist">
+
+</ul>
+<script>
+let addbtn=document.getElementById("addBtn");//creted a variable and gave access of a button from html to it 
+
+addbtn.addEventListener('click',addTask);
+
+function addTask(){
+    let userinput=document.getElementById("taskInput");//taskinput is id of inut box where user enters and its access is given to userinput variable
+    let input=userinput.value;//her we stored userinput value inside the input variable
+console.log(input);
+
+if(input === "")
+{
+    alert("Add task input box is empty");//this is the real alert tht browser shows if declred correctly
+    return;
+}
+
+let li=document.createElement("span");//here we created list inside html using javascript
+let br=document.createElement("br");
+li.innerHTML=input; //input contains the value entered by user we gave access of list to input now whatever is written in input will be displayed on this list
+
+deletebtn=document.createElement("button");//we created delete buttn in on html body using javascript
+
+deletebtn.innerHTML ="Delete";//we wrote the button name tht will be displayed
+
+li.appendChild(deletebtn);//her we added deletebtn to list
+let editbtn=document.createElement("button");
+editbtn.innerHTML="Edit";
+li.appendChild(editbtn);
+editbtn.addEventListener('click',edit);
+function edit(){
+  
+    userinput.value=input;
+  
+    li.innerHTML=userinput.value
+       li.innerHTML="";
+}
+
+
+document.getElementById("tasklist").appendChild(li);//add li to ul
+userinput.value="";
+deletebtn.addEventListener('click',function(){
+   li.innerHTML="";
+});
+}
+
+
+</script>
+</body>
+</html>
