@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        body {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Elements">
+        <button id="green" style="height: 40px;width: 40px;background-color: green;"></button>
+        <button id="yellow" style="height: 40px;width: 40px;background-color: yellow;"></button>
+        <button id="red" style="height: 40px;width: 40px;background-color: red;"></button>
+    </div>
+    <script>
+        const button1 = document.querySelector("#green");
+        const button2 = document.querySelector("#yellow");
+        const button3 = document.querySelector("#red");
+        const body = document.querySelector("body");
+
+        button1.addEventListener('click', green);
+        button2.addEventListener('click', yellow);
+        button3.addEventListener('click', red);
+        body.addEventListener('click', function (e) {
+            if (!document.getElementById('Elements').contains(e.target)) {
+                body.style.backgroundColor = "";
+            }
+        });
+        function green() {
+            body.style.backgroundColor = "green";
+        }
+
+        function yellow() {
+            body.style.backgroundColor = "yellow";
+        }
+
+        function red() {
+            body.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>
