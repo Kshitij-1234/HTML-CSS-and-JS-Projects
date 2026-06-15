@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What color is the sky?",
+    "options": ["Blue", "Green", "Black", "Red"],
+    "answer": "Blue"
+  },
+  {
+    "question": "How many eyes do we have?",
+    "options": ["One", "Two", "Five", "Ten"],
+    "answer": "Two"
+  },
+  {
+    "question": "What do we drink?",
+    "options": ["Stone", "Chair", "Water", "Pencil"],
+    "answer": "Water"
+  },
+  {
+    "question": "Which fruit is yellow?",
+    "options": ["Banana", "Apple", "Grapes", "Orange"],
+    "answer": "Banana"
+  },
+  {
+    "question": "What comes after A?",
+    "options": ["D", "B", "Z", "M"],
+    "answer": "B"
+  },
+  {
+    "question": "How many fingers are on one hand?",
+    "options": ["Three", "Five", "Nine","Six"],
+    "answer": "Five"
+  },
+  {
+    "question": "Which one is used for writing?",
+    "options": ["Plate", "Pencil", "Spoon", "Shoe"],
+    "answer": "Pencil"
+  },
+  {
+    "question": "What do we wear on feet?",
+    "options": ["Cap", "Shirt", "Shoes", "Gloves"],
+    "answer": "Shoes"
+  },
+  {
+    "question": "Grass color?",
+    "options": ["Green", "Pink", "Purple", "White"],
+    "answer": "Green"
+  },
+  {
+    "question": "Which organ do we use to see?",
+    "options": ["Ears", "Nose", "Eyes", "Hands"],
+    "answer": "Eyes"
+  }
+]
